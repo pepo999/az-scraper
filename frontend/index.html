@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Lyrics</title>
+</head>
+
+<body>
+    <header>
+        <h1>
+            Lyrics&Chords
+        </h1>
+    </header>
+    <div class="searchbar">
+        <div class="inputs">
+            <label for="artist">ARTIST</label>
+            <input type="text" id="artistInput">
+            <label for="title">TITLE</label>
+            <input type="text" id="titleInput">
+        </div>
+        <div class="buttons">
+            <button onclick="getLyrics()">GET LYRICS</button>
+            <div class="spacer"></div>
+            <button onclick="getLyricsAndChords()">GET CHORDS</button>
+        </div>
+    </div>
+    <div class="contour">
+        <pre id="container">
+    </pre>
+    </div>
+</body>
+<script src="./main.js"></script>
+
+</html>
